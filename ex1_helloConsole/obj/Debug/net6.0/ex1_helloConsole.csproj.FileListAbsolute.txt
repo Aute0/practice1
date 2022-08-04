@@ -1,0 +1,15 @@
+D:\Course\GB\С#\Практика\ex1_helloConsole\bin\Debug\net6.0\ex1_helloConsole.exe
+D:\Course\GB\С#\Практика\ex1_helloConsole\bin\Debug\net6.0\ex1_helloConsole.deps.json
+D:\Course\GB\С#\Практика\ex1_helloConsole\bin\Debug\net6.0\ex1_helloConsole.runtimeconfig.json
+D:\Course\GB\С#\Практика\ex1_helloConsole\bin\Debug\net6.0\ex1_helloConsole.dll
+D:\Course\GB\С#\Практика\ex1_helloConsole\bin\Debug\net6.0\ex1_helloConsole.pdb
+D:\Course\GB\С#\Практика\ex1_helloConsole\obj\Debug\net6.0\ex1_helloConsole.csproj.AssemblyReference.cache
+D:\Course\GB\С#\Практика\ex1_helloConsole\obj\Debug\net6.0\ex1_helloConsole.GeneratedMSBuildEditorConfig.editorconfig
+D:\Course\GB\С#\Практика\ex1_helloConsole\obj\Debug\net6.0\ex1_helloConsole.AssemblyInfoInputs.cache
+D:\Course\GB\С#\Практика\ex1_helloConsole\obj\Debug\net6.0\ex1_helloConsole.AssemblyInfo.cs
+D:\Course\GB\С#\Практика\ex1_helloConsole\obj\Debug\net6.0\ex1_helloConsole.csproj.CoreCompileInputs.cache
+D:\Course\GB\С#\Практика\ex1_helloConsole\obj\Debug\net6.0\ex1_helloConsole.dll
+D:\Course\GB\С#\Практика\ex1_helloConsole\obj\Debug\net6.0\refint\ex1_helloConsole.dll
+D:\Course\GB\С#\Практика\ex1_helloConsole\obj\Debug\net6.0\ex1_helloConsole.pdb
+D:\Course\GB\С#\Практика\ex1_helloConsole\obj\Debug\net6.0\ex1_helloConsole.genruntimeconfig.cache
+D:\Course\GB\С#\Практика\ex1_helloConsole\obj\Debug\net6.0\ref\ex1_helloConsole.dll
