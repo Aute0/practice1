@@ -14,7 +14,7 @@ Console.WriteLine();
 
 double min = arr[0];
 double max = arr[0];
-foreach (double i in arr)  // Поиск максимального и минимального значения
+foreach (int i in arr)  // Поиск максимального и минимального значения
 {
     if (min > arr[i]) min = arr[i];
     if (max < arr[i]) max = arr[i];
