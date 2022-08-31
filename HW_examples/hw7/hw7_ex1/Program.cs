@@ -8,12 +8,15 @@
 // NextDouble() дает случайное вещественное число в диапазоне от 0 до 1
 // {0,6:F2} - округление - знаки после запятой
 
-double[,] a = new double[5, 5];
+Console.WriteLine("Введите размеры массива");
+int m = Convert.ToInt32(Console.ReadLine());
+int n = Convert.ToInt32(Console.ReadLine());
+double[,] a = new double[m, n];
 
 Random random = new Random();
-for (int i = 0; i < 5; i++)
+for (int i = 0; i < a.GetLength(0); i++)
 {
-    for (int j = 0; j < 5; j++)
+    for (int j = 0; j < a.GetLength(1); j++)
     {
         a[i, j] = random.NextDouble() * 100; 
         Console.Write("{0,6:F2}", a[i, j]);
