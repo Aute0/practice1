@@ -1,32 +1,74 @@
 ﻿// create method for print array
 
 
-
-void PrintArray(int[,] matr)
+int SummElemInLine(int[,] array, int i)
 {
-    for (int rows = 0; rows < matr.GetLength(0); rows++)
+    int SummElemInLine = array[i, 0];
+    for (int j = 1; j < array.GetLength(1); j++)
     {
-        for (int columns = 0; columns< matr.GetLength(1); columns++)
+        SummElemInLine += array[i, j];
+    }
+    return SummElemInLine;
+}
+int InputNumbers(string input)
+{
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
+}
+void CreateArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write($"{matr[rows,columns]} ");
+            array[i, j] = new Random().Next(1, 10);
+        }
+    }
+}
+void WriteArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + " ");
         }
         Console.WriteLine();
     }
 }
 
-
-
-void FillArray(int[,] matr)
+void MultiplyMatrix(int[,] ArrayFirst, int[,] ArraySecond, int[,] MultiplyResult)
 {
-    for (int rows = 0;rows < matr.GetLength(0); rows++)
+    for (int i = 0; i < MultiplyResult.GetLength(0); i++)
     {
-        for (int columns = 0; columns < matr.GetLength(1); columns++)
+        for (int j = 0; j < MultiplyResult.GetLength(1); j++)
         {
-            matr[rows,columns] = new Random().Next(1,10);
+            int sum = 0;
+            for (int k = 0; k < ArrayFirst.GetLength(1); k++)
+            {
+                sum += ArrayFirst[i, k] * ArraySecond[k, j];
+            }
+            MultiplyResult[i, j] = sum;
         }
     }
 }
-int[,] matrix = new int[4, 5];
-PrintArray(matrix);
-FillArray(matrix);
-PrintArray(matrix);
+
+void ArrayOrder(int[,] InitialArray)
+{
+    for (int i = 0; i < InitialArray.GetLength(0); i++)
+    {
+        for (int j = 0; j < InitialArray.GetLength(1); j++)
+        {
+            for (int k = 0; k < InitialArray.GetLength(1) - 1; k++)
+            {
+                if (InitialArray[i, k] < InitialArray[i, k + 1])
+                {
+                    int temp = InitialArray[i, k + 1];
+                    InitialArray[i, k + 1] = InitialArray[i, k];
+                    InitialArray[i, k] = temp;
+                }
+            }
+        }
+    }
+}
